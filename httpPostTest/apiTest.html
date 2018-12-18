@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api Test</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript" src="jquery-1.11.0.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url : '/node/getAppByUserName',
+        type : 'post',
+        dataType : 'json',
+        contentType: "application/json",
+        data: JSON.stringify({
+            userName: 'liaocai',
+            appName:"liao2"
+        }),
+        success: function (result) {
+            console.log(result);
+            debugger
+        },
+        error:function (e) {
+            console.log(arguments);
+            debugger
+        }
+    });
+    appParamSetting[0].params[4].value = "oozie"
+    $.ajax({
+        url : '/node/runApp',
+        type : 'post',
+        dataType : 'json',
+        contentType: "application/json",
+        data: JSON.stringify({
+            appId: 'e50c1ba0de30427da9be5b28682b1e02',
+            userName: 'liaocai',
+            params: [appParamSetting[0]]
+        }),
+        success: function (result) {
+            console.log(result);
+            debugger
+        },
+        error:function (e) {
+            console.log(arguments);
+            debugger
+        }
+    });
+    function getMessage(result) {
+
+    }
+</script>

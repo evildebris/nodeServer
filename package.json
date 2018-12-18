@@ -1,0 +1,28 @@
+{
+  "name": "zzjzNodeServer",
+  "version": "0.0.0",
+  "private": true,
+  "bin": "./bin/server",
+  "pkg": {
+    "assets": "config/**/*"
+  },
+  "scripts": {
+    "start": "node ./bin/server"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "concat-stream": "^1.6.2",
+    "fast-xml-parser": "^3.11.1",
+    "pkg": "^4.3.3",
+    "process": "^0.11.10",
+    "ws": "^5.2.0"
+  }
+}

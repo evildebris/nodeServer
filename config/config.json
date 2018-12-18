@@ -1,0 +1,11 @@
+{
+    "apiRest":"http://192.168.11.101:9212/cmgr",
+    "upload":"http://192.168.11.101:9212/cmgr/upload",
+    "auth":"http://192.168.11.101:9212",
+    "engine":"http://192.168.11.32:8898",
+    "appMapTiles":"http://192.168.11.102:6091/app/MapTiles",
+
+
+    "engineUser":"liaocai",
+    "port":"4000"
+}

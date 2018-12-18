@@ -1,0 +1,6 @@
+{//start flow
+import scala.collection.JavaConversions._
+import java.util.Calendar
+import java.util.TimeZone
+val StartOpr = compat.Platform.currentTime;
+@transient val syslog=new org.apache.log4j.helpers.SyslogQuietWriter(new org.apache.log4j.helpers.SyslogWriter("192.168.15.122"), 600, new org.apache.log4j.varia.FallbackErrorHandler())
